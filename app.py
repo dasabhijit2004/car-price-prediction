@@ -4,6 +4,9 @@ import pandas as pd
 import pickle
 import datetime
 
+import joblib
+model = joblib.load('model.pkl')
+
 # Load the trained model from the pickle file
 try:
     model = pickle.load(open('car_price_model.pkl', 'rb'))
