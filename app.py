@@ -1,10 +1,7 @@
-# Import necessary libraries
 import streamlit as st
 import pandas as pd
 import pickle
 import datetime
-
-import joblib
 
 # Load the trained model from the pickle file
 try:
@@ -80,8 +77,6 @@ def main():
             st.code(str(e))
     else:
         st.warning("Model not loaded. Please check if the model file exists and is valid.")
-
-joblib.dump(model, 'model.pkl')
 
 if __name__ == '__main__':
     main()
