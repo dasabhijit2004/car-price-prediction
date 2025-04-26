@@ -5,7 +5,6 @@ import pickle
 import datetime
 
 import joblib
-model = joblib.load('model.pkl')
 
 # Load the trained model from the pickle file
 try:
