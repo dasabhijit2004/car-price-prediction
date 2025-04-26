@@ -82,5 +82,7 @@ def main():
     else:
         st.warning("Model not loaded. Please check if the model file exists and is valid.")
 
+joblib.dump(model, 'model.pkl')
+
 if __name__ == '__main__':
     main()
